@@ -1,0 +1,25 @@
+.about {
+  padding: 5rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  text-shadow: var(--accent-glow);
+}
+
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

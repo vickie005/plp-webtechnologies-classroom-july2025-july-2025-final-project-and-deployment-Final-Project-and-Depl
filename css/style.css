@@ -1,0 +1,178 @@
+/* 🌌 Global Dark Theme with Neon Accents */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg-dark: #0d0d0d;
+  --bg-gradient: linear-gradient(135deg, #0d0d0d, #1a1a2e);
+  --text-light: #f5f5f5;
+  --accent: #7f5af0;
+  --accent-glow: 0 0 10px rgba(127, 90, 240, 0.8),
+                 0 0 20px rgba(127, 90, 240, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.35s ease, color 0.35s ease;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+body.light-mode {
+  --bg-dark: #f5f7fb;
+  --bg-gradient: linear-gradient(135deg, #ffffff, #f0f4ff);
+  --text-light: #0b1220;
+  --accent: #6f42c1;
+  --accent-glow: 0 0 8px rgba(111,66,193,0.12);
+  background: var(--bg-gradient);
+  color: var(--text-light);
+}
+
+body.light-mode header {
+  background: rgba(255,255,255,0.85);
+  -webkit-backdrop-filter: blur(6px); 
+  backdrop-filter: blur(6px);         
+  color: var(--text-light);
+}
+
+body.light-mode .logo { color: var(--accent); text-shadow: none; }
+body.light-mode .nav-links a { color: var(--text-light); }
+
+body.light-mode .card,
+body.light-mode .event-card,
+body.light-mode .member-card {
+  background: #ffffff;
+  color: var(--text-light);
+  box-shadow: 0 8px 30px rgba(17,24,39,0.06);
+  border: 1px solid rgba(16,24,40,0.04);
+}
+
+body.light-mode input,
+body.light-mode textarea {
+  background: #ffffff;
+  color: var(--text-light);
+  border: 1px solid rgba(16,24,40,0.08);
+}
+
+body.light-mode .logo,
+body.light-mode .nav-links a.active,
+body.light-mode .hero span {
+  text-shadow: none;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  text-shadow: var(--accent-glow);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+  text-shadow: var(--accent-glow);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at top, #1a1a2e, #0d0d0d);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero span {
+  color: var(--accent);
+  text-shadow: var(--accent-glow);
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--accent-glow);
+}
+
+.hero .btn:hover {
+  transform: scale(1.05);
+}
+
+.highlights {
+  display: grid;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #161625;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--accent-glow);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #0d0d0d;
+  font-size: 0.9rem;
+  color: #aaa;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Wizards | Join Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Web Wizards ✨</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="contact.html" class="active">Join Us</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Join Web Wizards</h1>
+
+    <form id="join-form" novalidate>
+      <input id="name" type="text" name="name" placeholder="Full Name" required>
+      <input id="email" type="email" name="email" placeholder="Email Address" required>
+      <textarea id="message" name="message" placeholder="Why do you want to join?" required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <!-- Form feedback message -->
+    <p id="form-message" aria-live="polite"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web Wizards | Crafted with ✨</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>

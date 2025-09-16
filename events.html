@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Wizards | Events</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Web Wizards ✨</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="contact.html">Join Us</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section class="events">
+    <h1>Upcoming & Past Events</h1>
+    <div class="event-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+      <button class="filter-btn" data-filter="past">Past</button>
+    </div>
+
+    <div class="event-list">
+      <div class="event-card upcoming">
+        <h2>Hackathon 2025</h2>
+        <p>Join us for an exciting 24-hour coding marathon!</p>
+      </div>
+      <div class="event-card past">
+        <h2>Web Dev Workshop</h2>
+        <p>We explored responsive design and accessibility best practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web Wizards | Crafted with ✨</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>
